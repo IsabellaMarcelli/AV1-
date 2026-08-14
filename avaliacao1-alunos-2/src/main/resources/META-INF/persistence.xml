@@ -15,9 +15,7 @@
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
 
         <properties>
-            <!-- Conexao com o banco H2 em memoria.
-                 DB_CLOSE_DELAY=-1 mantem o banco vivo enquanto a aplicacao roda,
-                 para os dados nao sumirem entre uma operacao e outra do menu. -->
+           
             <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:mem:loja;DB_CLOSE_DELAY=-1"/>
             <property name="jakarta.persistence.jdbc.user" value="sa"/>

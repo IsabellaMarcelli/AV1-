@@ -4,10 +4,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
-/*
- * Classe utilitaria para nao repetir a criacao do EntityManager pela aplicacao inteira.
- * O "loja" abaixo tem que ser igual ao name da persistence-unit no persistence.xml.
- */
+
 public class JPAUtil {
 
     // A fabrica (Factory) e criada UMA vez e reaproveitada (e cara de criar).

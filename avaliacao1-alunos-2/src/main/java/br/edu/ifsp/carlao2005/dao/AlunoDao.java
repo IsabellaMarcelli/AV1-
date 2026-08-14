@@ -6,11 +6,7 @@ import br.edu.ifsp.carlao2005.modelo.Aluno;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.NoResultException;
 
-/*
- * DAO (Data Access Object): concentra todo o acesso ao banco da entidade Aluno.
- * Assim o resto do programa nao precisa saber de EntityManager, queries, etc.
- * Recebe o EntityManager por parametro (mesmo padrao das aulas com ProdutoDao).
- */
+
 public class AlunoDao {
 
     private final EntityManager em;
@@ -46,7 +42,7 @@ public class AlunoDao {
         }
     }
 
-    // SELECT de todos os alunos.
+    // SELECT 
     public List<Aluno> listarTodos() {
         return this.em
                 .createQuery("SELECT a FROM Aluno a", Aluno.class)

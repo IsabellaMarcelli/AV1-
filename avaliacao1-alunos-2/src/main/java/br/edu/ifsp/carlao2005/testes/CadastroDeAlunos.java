@@ -9,11 +9,7 @@ import br.edu.ifsp.carlao2005.modelo.Aluno;
 import br.edu.ifsp.carlao2005.util.JPAUtil;
 import jakarta.persistence.EntityManager;
 
-/*
- * Classe principal: mostra o menu e chama as operacoes do CRUD.
- * Cada operacao que muda o banco (cadastrar, alterar, excluir) abre uma transacao,
- * faz o trabalho e da commit; as consultas (buscar, listar) nao precisam de transacao.
- */
+
 public class CadastroDeAlunos {
 
     // Um unico Scanner para o programa todo.

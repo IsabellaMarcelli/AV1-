@@ -6,10 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-/*
- * Entidade Aluno: cada objeto desta classe vira uma linha na tabela "alunos".
- * As anotacoes JPA (@Entity, @Id, etc.) e que fazem o mapeamento objeto -> tabela.
- */
+
 @Entity
 @Table(name = "alunos")
 public class Aluno {
